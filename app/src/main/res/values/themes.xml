@@ -1,0 +1,18 @@
+<resources>
+    <!-- Main app theme (Material 3, light, green brand color) -->
+    <style name="Theme.SpendWise" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/green_light</item>
+        <item name="colorOnPrimaryContainer">@color/green_dark</item>
+        <item name="colorSecondary">@color/coin_gold_dark</item>
+        <item name="android:colorBackground">@color/background</item>
+    </style>
+
+    <!-- Splash screen theme: shown while the app starts, then replaced by Theme.SpendWise -->
+    <style name="Theme.SpendWise.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/green_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.SpendWise</item>
+    </style>
+</resources>

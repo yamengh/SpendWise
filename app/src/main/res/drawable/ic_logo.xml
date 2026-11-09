@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SpendWise logo: a white wallet with a gold coin sticking out.
+    Drawn on a 108x108 grid (the size Android uses for adaptive app icons),
+    with everything kept inside the middle "safe zone" so no launcher crops it.
+    Used for: the app icon (foreground layer) and the splash screen.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Coin (drawn first, so the wallet covers its bottom half) -->
+    <path
+        android:fillColor="@color/coin_gold_dark"
+        android:pathData="M36,40 a11,11 0 1,0 22,0 a11,11 0 1,0 -22,0 Z" />
+    <path
+        android:fillColor="@color/coin_gold"
+        android:pathData="M39,40 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" />
+
+    <!-- Wallet body: rounded rectangle -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M35,44 H69 A5,5 0 0 1 74,49 V69 A5,5 0 0 1 69,74 H35 A5,5 0 0 1 30,69 V49 A5,5 0 0 1 35,44 Z" />
+
+    <!-- Wallet clasp on the right side -->
+    <path
+        android:fillColor="@color/green_light"
+        android:pathData="M64,52 H76 A3,3 0 0 1 79,55 V63 A3,3 0 0 1 76,66 H64 A3,3 0 0 1 61,63 V55 A3,3 0 0 1 64,52 Z" />
+
+    <!-- Clasp button -->
+    <path
+        android:fillColor="@color/green_primary"
+        android:pathData="M67,59 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z" />
+</vector>

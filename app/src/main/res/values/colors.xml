@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main brand color (green = money) -->
+    <color name="green_primary">#FF2E7D32</color>
+    <color name="green_dark">#FF1B5E20</color>
+    <color name="green_light">#FFC8E6C9</color>
+
+    <!-- Coin colors used in the logo -->
+    <color name="coin_gold">#FFFFC107</color>
+    <color name="coin_gold_dark">#FFFFA000</color>
+
+    <!-- Used for the Delete button -->
+    <color name="red_delete">#FFC62828</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#FFF5F7F5</color>
+</resources>

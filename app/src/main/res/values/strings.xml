@@ -1,0 +1,52 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">SpendWise</string>
+    <string name="logo_description">SpendWise logo</string>
+
+    <!-- Main screen -->
+    <string name="empty_list">No expenses yet.\nTap + to add your first one.</string>
+    <string name="total_label">Total spent</string>
+    <string name="add_expense">Add expense</string>
+
+    <!-- Money and list items -->
+    <string name="amount_ft">%1$s Ft</string>
+    <string name="currency_suffix">Ft</string>
+    <!-- e.g. "Food · Nov 9, 2026" -->
+    <string name="expense_subtitle">%1$s · %2$s</string>
+
+    <!-- Add / Edit screen -->
+    <string name="title_add_expense">Add expense</string>
+    <string name="title_edit_expense">Edit expense</string>
+    <string name="navigate_back">Back</string>
+    <string name="hint_amount">Amount</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_note">Note (optional)</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="toast_saved">Expense saved</string>
+    <string name="toast_deleted">Expense deleted</string>
+
+    <!-- Validation errors -->
+    <string name="error_amount_empty">Please enter an amount</string>
+    <string name="error_amount_invalid">The amount must be greater than 0</string>
+    <string name="error_title_empty">Please enter a title</string>
+    <string name="error_category_empty">Please choose a category</string>
+
+    <!-- Delete dialog -->
+    <string name="delete_dialog_title">Delete expense?</string>
+    <string name="delete_dialog_message">\"%1$s\" will be deleted permanently.</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Categories shown in the dropdown -->
+    <string-array name="categories">
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Shopping</item>
+        <item>Bills</item>
+        <item>Entertainment</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+</resources>

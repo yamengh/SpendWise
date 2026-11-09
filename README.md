@@ -3,13 +3,13 @@
 A simple Android expense tracker written in **Kotlin**. Add your expenses, see them in a list with the total spent in Hungarian Forint, and edit or delete them at any time. Everything is saved on the phone in a local **Room** database.
 
 <p align="center">
-  <img src="docs/screenshots/01_splash.png" width="250" alt="Splash screen" />
-  <!-- More screenshots (put the PNGs in docs/screenshots/ and uncomment):
-  <img src="docs/screenshots/02_main.png" width="250" alt="Expense list with total" />
-  <img src="docs/screenshots/03_add.png" width="250" alt="Add expense with validation" />
-  <img src="docs/screenshots/04_delete.png" width="250" alt="Delete confirmation" />
-  -->
+  <img src="docs/screenshots/01_splash.png" width="200" alt="Splash screen" />
+  <img src="docs/screenshots/02_main.png" width="200" alt="Expense list with total" />
+  <img src="docs/screenshots/03_add.png" width="200" alt="Add expense with validation" />
+  <img src="docs/screenshots/04_delete.png" width="200" alt="Delete confirmation" />
 </p>
+
+<p align="center"><i>Splash screen · Expense list with total · Input validation · Delete confirmation</i></p>
 
 ## Features
 

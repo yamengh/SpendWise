@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
+import androidx.core.widget.doAfterTextChanged
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.MaterialToolbar
@@ -89,6 +90,11 @@ class AddEditExpenseActivity : AppCompatActivity() {
         editDate.setText(formatDate(selectedDate))
         editDate.setOnClickListener { showDatePicker() }
 
+        // Remove a field's error as soon as the user changes that field
+        editAmount.doAfterTextChanged { layoutAmount.error = null }
+        editTitle.doAfterTextChanged { layoutTitle.error = null }
+        dropdownCategory.doAfterTextChanged { layoutCategory.error = null }
+
         findViewById<Button>(R.id.buttonSave).setOnClickListener { saveExpense() }
         buttonDelete.setOnClickListener { confirmDelete() }
 
@@ -109,6 +115,13 @@ class AddEditExpenseActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putLong(KEY_DATE, selectedDate)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        // After rotation Android puts the chosen category back into the dropdown, and that
+        // filters the list down to just that one item. Setting the items again shows all of them.
+        dropdownCategory.setSimpleItems(R.array.categories)
     }
 
     private fun fillForm(expense: Expense) {
